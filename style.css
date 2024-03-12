@@ -1,0 +1,21 @@
+.Barraarriba {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #AE946D;
+    padding: 0px;
+}
+body { 
+    margin: 0%;
+}
+.Barraarriba h3 {
+    font-size: 14px;
+    color: white;
+    
+}
+.barradebusqueda{
+    background-color: #181818;
+}
+.barradebusqueda button img {
+   width: 1%;
+}
