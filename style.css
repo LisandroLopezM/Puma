@@ -5,6 +5,12 @@
     background-color: #AE946D;
     padding: 0px;
     margin: 0%;
+    padding-bottom: 10px;
+}
+.barradebusqueda ul	{
+    display: flex;
+    align-items: flex-start;
+
 }
 body { 
     margin: 0%;
@@ -18,13 +24,20 @@ body {
     background-color: #181818;
     padding: 0px;
     margin: -20px;
+
+    
 }
 .barradebusqueda li{
+    align-items:center;
     color: white;
     list-style-type: none;
     display: flex;
     font-size:18px;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0 15px;
+    
+    
+    
 }
 .barradebusqueda a{
     color: white;
@@ -38,9 +51,20 @@ body {
     width: 40px 50px;
 }
 #puma {
-    width: 10%;
+    width: 6%;
+    margin-top: 19px;
+    margin-left: 12px;
+    margin-bottom: 15px;
 }
 
 #lupa {
     width: 5%;
 }
+#carro {
+    
+    
+}
+#con {
+    margin-right: 20px;
+}
+
