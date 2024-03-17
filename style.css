@@ -3,68 +3,301 @@
     display: flex;
     justify-content: center;
     background-color: #AE946D;
-    padding: 0px;
+    padding: 10px 25px;
     margin: 0%;
     padding-bottom: 10px;
-}
-.barradebusqueda ul	{
-    display: flex;
-    align-items: flex-start;
+    padding-top: 20px;
 
 }
-body { 
-    margin: 0%;
+body {
+    margin: 0px;
 }
 .Barraarriba h3 {
     font-size: 14px;
     color: white;
-    
 }
-.barradebusqueda{
+
+.barradebusqueda {
+  
+    position: relative; /* Establece el contenedor como posición relativa */
     background-color: #181818;
     padding: 0px;
-    margin: -20px;
-
-    
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center;
 }
-.barradebusqueda li{
-    align-items:center;
+
+.barradebusqueda ul {
+    margin-top: 20px;
+    display: flex;
+    align-items: center; /* Alinear verticalmente los elementos */
+}
+
+.barradebusqueda li {
     color: white;
     list-style-type: none;
     display: flex;
-    font-size:18px;
+    font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0 15px;
-    
-    
+    margin-right: 15px; /* Añade espacio entre los elementos */
+}
+
+#puma {
+    width: 5%;
+    margin-top: 0px;
+    margin-left: 0; /* Elimina el margen izquierdo de PUMA */
+    position: absolute; /* Posiciona la imagen absolutamente */
+    left: 20px; /* Ajusta la posición de la imagen desde el borde izquierdo */
+    top: 10px;
+}
+
+#sale {
+    margin-right: 60px; /* Elimina el margen derecho de SALE */
+}
+
+.barradebusqueda li:not(:first-child) {
+    margin-left: 20px; /* Ajusta la distancia de los elementos restantes */
+}
+
+.input-con-imagen {
+    position: relative;
+}
+
+.input-con-imagen img#lupa {
+    position: absolute;
+    left: 10px; /* Ajusta el espacio a la izquierda según tus necesidades */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* Ajusta el tamaño según tus necesidades */
+    height: auto;
     
 }
-.barradebusqueda a{
+
+.input-con-imagen input[type="text"] {
+    padding-left: 35px; /* Ajusta el espacio a la izquierda según el tamaño de la imagen */
+    width: 100%; /* Para que ocupe todo el ancho disponible */
+    background-color: #181818; /* Fondo negro */
+    color: white; /* Texto blanco */
+    border: 1px solid #3A3A3A; /* Borde sólido de 1px color gris claro */
+    border-radius: 2px; /* Ajusta según lo que desees */
+    padding: 8px; /* Ajusta el espacio interno */
+    height: 35px; /* Altura del input */
+    width: 180px; /* Ancho del input */
+}
+
+.barradebusqueda a {
     color: white;
     text-decoration: none;
-    
 }
+
 .barradebusqueda button img {
-   width: 5%;
+    width: 5%;
 }
+
 .barradebusqueda input {
     width: 40px 50px;
 }
-#puma {
-    width: 6%;
-    margin-top: 19px;
-    margin-left: 12px;
-    margin-bottom: 15px;
-}
 
-#lupa {
-    width: 5%;
-}
-#carro {
-    
-    
-}
+
 #con {
     margin-right: 20px;
 }
+
+.kimg {
+    position: relative;
+    display: inline-block;
+    margin:0%;
+}
+
+.kimg img {
+    display: flex;
+    width: 90%;   
+}
+
+.kimg button {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.kimg:hover button {
+    opacity: 1;
+}
+
+.cuadro {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    top: 230px;
+    width: calc(50% - 10px); 
+    height: 100%;
+    color: black; 
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#le {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font: 2rem 'FFDIN', Arial, sans-serif;
+    line-height: 1;
+    letter-spacing: .75px;
+    text-transform: uppercase;
+    margin: 0 0 1.5rem;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: var(--cms-line-height);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font: 1.375rem 'FFDIN', Arial, sans-serif;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+#lel {
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    font-family: var(--font-FFDIN);
+    font-weight: normal;
+    outline: 0;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.texto {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 0%;
+    height: 100%; 
+}
+
+.texto h2 {
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    margin-right: 20px;
+    text-align: center; 
+    padding: 12px 48px;
+    line-height:1.5;
+}
+
+.texto img {
+    width: 50%; 
+    cursor: pointer;
+}
+
+.barra2 {
+    background-color: #EDEDED;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    
+    padding-bottom: 10px; 
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.barra2 h2 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 19px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.barra2 ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+.barra2 ul li {
+    margin-right: 50px; 
+    margin-left: 50px;
+    margin-bottom: 10px; 
+    font-size: 12px; 
+    width: 150px; /* Ancho fijo para cada elemento li */
+    font-family: Arial;
+    align-items: center;
+    justify-content: center;
+    display: flex; /* Cambia el display a flex */
+    flex-direction: column; /* Alinea los elementos en columna */
+    text-align: center; /* Alinea el texto al centro */
+}
+.barra2 h3 {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 15px;
+    font-weight: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
+}
+
+
+.barra2 img {
+    width: 60%; /* Establece el ancho de la imagen */
+   
+}
+.textopequeño {
+    font-weight: none; /* Quita la negrita */
+    font-weight: 100; /* Establece un grosor de fuente más ligero */
+}
+.imagengrande a img {
+    width: 100%; 
+  
+}
+.negro {
+    background-color: black;
+    color: white;
+    padding-bottom: 134px;
+    width: 100%;
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.negro h1 {
+    padding-top: 20px;
+    font-size: 50px;
+}
+
+.negro button {
+    background-color: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    width: 138px 48px;
+    padding: 15px 48px;
+    display: inline-block; 
+    margin-top: 20px; /* Opcional: Agrega un margen superior para separar del h1 */
+    border: black;
+}
+
+
+
+
 
