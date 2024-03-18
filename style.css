@@ -11,6 +11,7 @@
 }
 body {
     margin: 0px;
+     
 }
 .Barraarriba h3 {
     font-size: 14px;
@@ -275,13 +276,13 @@ body {
 .negro {
     background-color: black;
     color: white;
-    padding-bottom: 134px;
+    padding-bottom: 70px;
     width: 100%;
     text-align: center; /* Centra el contenido horizontalmente */
 }
 
 .negro h1 {
-    padding-top: 20px;
+    padding-top: 50px;
     font-size: 50px;
 }
 
@@ -293,11 +294,106 @@ body {
     width: 138px 48px;
     padding: 15px 48px;
     display: inline-block; 
-    margin-top: 20px; /* Opcional: Agrega un margen superior para separar del h1 */
+    margin-top: 20px; 
     border: black;
 }
+.imagenes {
+    display: flex;
+}
+.imagenes a img{
+    display: inline-block; 
+    flex: 1;
+    width: 100%;
+    margin: 0px;
+    margin-right: 0px;
+}
+.las {
+    display: flex;
+}
 
+.las div {
+    flex: 1;
+    text-align: center; /* Centro el contenido dentro de cada div */
+    color: black;
+    padding-bottom: 40px;
+}
 
+.las div h2 {
+    text-align: center;
+    color: black;
+    padding: 32px 24px;
+    margin-bottom: 40px;
+    font-size: 27px;
+}
 
+.las div button {
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    font-size: 14px;
+    width: 138px 58px;
+    padding: 15px 68px;
+    background-color: black;
+    color:white;
+    border: black;
+    min-width: 138px;
+}
+video{
+    margin:0px;
+    width: 100%;
+}
+.negro2 {
+    background-color: black;
+    color: white;
+    padding-bottom: 70px;
+    width: 100%;
+    text-align: center; /* Centra el contenido horizontalmente */
+   
+    
+}
 
+.negro2 h1 {
+    padding-top: 60px;
+    font-size: 50px;
+}
 
+.negro2 button {
+    background-color: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    width: 138px 48px;
+    padding: 15px 48px;
+    display: inline-block; 
+    margin-top: 20px; 
+    border: black;
+}
+.container {
+    text-align: center;
+}
+
+.titulos {
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.image-container a {
+    margin: 0 10px;
+}
+
+.image-container img {
+    height: 60%;
+    max-width: 50%;
+    transition: opacity 0.3s ease;
+    opacity: 1; /* Establecer la opacidad predeterminada */
+}
+
+.image-container:hover img:not(:hover) {
+    opacity: 0.5;
+}
